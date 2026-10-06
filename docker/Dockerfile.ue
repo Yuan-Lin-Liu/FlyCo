@@ -1,0 +1,5 @@
+FROM flyco:noetic
+
+ENV DEBIAN_FRONTEND=noninteractive UE_USE_SYSTEM_MONO=1
+RUN apt-get update && apt-get install -y --no-install-recommends mono-devel \
+    && rm -rf /var/lib/apt/lists/*

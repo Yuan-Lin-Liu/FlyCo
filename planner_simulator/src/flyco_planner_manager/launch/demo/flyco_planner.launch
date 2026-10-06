@@ -1,0 +1,9 @@
+<launch>  
+  <!-- ! Parameters -->
+  <arg name="scenario"/>
+  
+  <include file="$(find flyco_planner_manager)/launch/demo/param.xml">
+    <arg name="scenario"           value="$(arg scenario)"/>
+  </include>
+
+</launch>

@@ -1,0 +1,16 @@
+# Catkin build artifacts
+build/
+devel/
+install/
+log/
+perception_predictor/build/
+perception_predictor/devel/
+
+# Python cache artifacts
+__pycache__/
+*.py[cod]
+.omx
+.docker-data/
+perception_predictor/src/sam_tracking/ckpt/*.pt
+perception_predictor/src/sam_tracking/ckpt/*.pth
+perception_predictor/src/mesh_predict/resources/checkpoints/*.pth

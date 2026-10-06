@@ -1,0 +1,13 @@
+**/build
+**/devel
+**/install
+**/logs
+**/run_log
+**/__pycache__
+**/*.bag
+**/*.pcd
+**/ckpt/*.pt
+**/ckpt/*.pth
+**/resources/checkpoints/*.pth
+misc
+.docker-data

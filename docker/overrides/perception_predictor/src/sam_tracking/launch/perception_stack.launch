@@ -1,0 +1,74 @@
+<launch>
+  <arg name="tracking_config_file" default="$(find sam_tracking)/config/tracking.yaml" />
+  <arg name="cluster_config_file" default="$(find sam_tracking)/config/cluster.yaml" />
+  <arg name="min_height" default="1.0" />
+  <arg name="use_config_min_height" default="false" />
+  <arg name="cluster_tolerance" default="1.0" />
+  <arg name="cluster_algorithm" default="incremental_euclidean" />
+  <arg name="target_refine_mode" default="guide_radius" />
+  <arg name="cluster_min_x" default="" />
+  <arg name="cluster_max_x" default="" />
+  <arg name="cluster_min_y" default="" />
+  <arg name="cluster_max_y" default="" />
+  <arg name="cluster_min_z" default="" />
+  <arg name="cluster_max_z" default="" />
+  <arg name="launch_prompt_ui" default="true" />
+  <arg name="launch_rviz" default="false" />
+  <arg name="initial_text_prompt" default="" />
+  <arg name="ui_initial_text_prompt" default="$(arg initial_text_prompt)" />
+  <arg name="evf_text_init_enabled" default="true" />
+  <arg name="evf_root" default="" />
+  <arg name="evf_model_version" default="" />
+
+  <arg name="profile_config_path" default="$(find mesh_predict)/config/profiles/sim.yaml" />
+  <arg name="runtime_config_path" default="$(find mesh_predict)/config/runtime/pc_mesh_predict_runtime.yaml" />
+  <arg name="mesh_pred_ckpt_path" default="" />
+  <arg name="debug_dump_dir" default="" />
+  <arg name="debug_dump_once" default="false" />
+  <arg name="nksr_scale" default="0.2" />
+  <arg name="recall_threshold" default="0.9" />
+  <arg name="recall_distance_threshold" default="" />
+  <arg name="mesh_min_z_offset" default="" />
+  <arg name="pose_alignment_mode" default="" />
+  <arg name="intrinsics_mode" default="" />
+  <arg name="prediction_outlier_filter" default="" />
+
+  <include file="$(find sam_tracking)/launch/full_stack.launch">
+    <arg name="tracking_config_file" value="$(arg tracking_config_file)" />
+    <arg name="cluster_config_file" value="$(arg cluster_config_file)" />
+    <arg name="min_height" value="$(eval '' if arg('use_config_min_height') else arg('min_height'))" />
+    <arg name="cluster_tolerance" value="$(arg cluster_tolerance)" />
+    <arg name="cluster_algorithm" value="$(arg cluster_algorithm)" />
+    <arg name="target_refine_mode" value="$(arg target_refine_mode)" />
+    <arg name="cluster_min_x" value="$(arg cluster_min_x)" />
+    <arg name="cluster_max_x" value="$(arg cluster_max_x)" />
+    <arg name="cluster_min_y" value="$(arg cluster_min_y)" />
+    <arg name="cluster_max_y" value="$(arg cluster_max_y)" />
+    <arg name="cluster_min_z" value="$(arg cluster_min_z)" />
+    <arg name="cluster_max_z" value="$(arg cluster_max_z)" />
+    <arg name="launch_prompt_ui" value="$(arg launch_prompt_ui)" />
+    <arg name="initial_text_prompt" value="$(arg initial_text_prompt)" />
+    <arg name="ui_initial_text_prompt" value="$(arg ui_initial_text_prompt)" />
+    <arg if="$(eval arg('evf_text_init_enabled') != '')" name="evf_text_init_enabled" value="$(arg evf_text_init_enabled)" />
+    <arg if="$(eval arg('evf_root') != '')" name="evf_root" value="$(arg evf_root)" />
+    <arg if="$(eval arg('evf_model_version') != '')" name="evf_model_version" value="$(arg evf_model_version)" />
+  </include>
+
+  <include file="$(find mesh_predict)/launch/mesh_predict.launch">
+    <arg name="profile_config_path" value="$(arg profile_config_path)" />
+    <arg name="runtime_config_path" value="$(arg runtime_config_path)" />
+    <arg name="mesh_pred_ckpt_path" value="$(arg mesh_pred_ckpt_path)" />
+    <arg name="debug_dump_dir" value="$(arg debug_dump_dir)" />
+    <arg name="debug_dump_once" value="$(arg debug_dump_once)" />
+    <arg name="min_height" value="$(eval '' if arg('use_config_min_height') else arg('min_height'))" />
+    <arg name="nksr_scale" value="$(arg nksr_scale)" />
+    <arg name="mesh_min_z_offset" value="$(arg mesh_min_z_offset)" />
+    <arg name="recall_threshold" value="$(arg recall_threshold)" />
+    <arg name="recall_distance_threshold" value="$(arg recall_distance_threshold)" />
+    <arg name="pose_alignment_mode" value="$(arg pose_alignment_mode)" />
+    <arg name="intrinsics_mode" value="$(arg intrinsics_mode)" />
+    <arg name="prediction_outlier_filter" value="$(arg prediction_outlier_filter)" />
+  </include>
+
+  <include if="$(arg launch_rviz)" file="$(find sam_tracking)/launch/rviz.launch" />
+</launch>

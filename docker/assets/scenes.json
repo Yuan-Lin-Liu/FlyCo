@@ -1,0 +1,1122 @@
+[
+  {
+    "url": "https://drive.google.com/uc?id=1gjUlOw54b_OIaE8Ks_KHGcsLYsBYmxBJ",
+    "path": "Content/scenarios/arc/demo/Map/Maps/arc.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=14e4Ht0PirO1P9wdOBrC1wO0_CSvLhV8F",
+    "path": "Content/scenarios/arc/demo/Map/Materials/Material0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=18jL_W0rA69gkwSO76dC8TmN915IdKqs0",
+    "path": "Content/scenarios/arc/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1YN6ZGOmAetnJWiKCuzjYXiNyV3EGftus",
+    "path": "Content/scenarios/arc/demo/Map/0_95759c3b26a9413a953868211e4718a7_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1g0MwWXhPzMVmpmahzKe65SZG6Ex3uSVg",
+    "path": "Content/scenarios/arc/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Materials/Material_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1FLBmgwDjbwNL16N-atGUPFs60Jp5s3pA",
+    "path": "Content/scenarios/arc/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Textures/0_Image_8.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ltoO7Zg-VOWY5cfgudErAVxE_fRjRqM0",
+    "path": "Content/scenarios/arc/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/0_Skybox_Material_001_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1__NDg1Se3jYUq-rcawvAdcbqwifNKDND",
+    "path": "Content/scenarios/buddha/demo/Map/Maps/buddha.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1IYdMT2o8yOk1n6_H8cYrLqy7-jns6vib",
+    "path": "Content/scenarios/buddha/demo/Map/Materials/tex_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1FCkDSqTGEkseVMEj60gFsKbVUiqz4I-t",
+    "path": "Content/scenarios/buddha/demo/Map/Materials/tex_u2_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=12yAEZWWADBv9BwWT2Dw1RE0vtcjx4neI",
+    "path": "Content/scenarios/buddha/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1HqeoUAZzjfj1jX9tnYIRQaCohm-HFie6",
+    "path": "Content/scenarios/buddha/demo/Map/Textures/1_Image_1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1zA3aqYBo9DkxfrVvtNoSJiNqHkLpjJ0Q",
+    "path": "Content/scenarios/buddha/demo/Map/tian_tan_buddha_videogrammetry_scan_merged/Materials/tex_u1_v1_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=17Mv9l5tLRm4Sq7e8hSDqtjtdTu7HfjXr",
+    "path": "Content/scenarios/buddha/demo/Map/tian_tan_buddha_videogrammetry_scan_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=11Ww6JMvSoN8lP20oTED0X7ldYx00kz3q",
+    "path": "Content/scenarios/buddha/demo/Map/tian_tan_buddha_videogrammetry_scan_merged/0_tian_tan_buddha_videogrammetry_scan_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1W2T95KfXrDENpglJNCNeJaxT7G3fwJ7X",
+    "path": "Content/scenarios/buddha/demo/Map/0_mount_clare_museum_house_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1I1Yx8IGDbUfSgaC-AejBmZqSdJmxTG-4",
+    "path": "Content/scenarios/castle/demo/arc_de_triomphe_merged/Materials/arc-triomphe_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=135vR_WLyHfylz10aSxm0YUMjfoexg8U0",
+    "path": "Content/scenarios/castle/demo/arc_de_triomphe_merged/Textures/3_Image_3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=15M0BjcVHQddKJox_NLkstGYFIB3-1udc",
+    "path": "Content/scenarios/castle/demo/jiaoshan_dinghui_temple_merged/Materials/20241224_005_RC_LOD0_u0_v0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GR8wfQ-_B5tmgCJW_Z-3aeM_cvRZfxaf",
+    "path": "Content/scenarios/castle/demo/jiaoshan_dinghui_temple_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1oH3SiEfKhk5N3Ft1hzGWb8UHpP5Cqm5r",
+    "path": "Content/scenarios/castle/demo/Map/Maps/castle.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1frmzwgq7JZo1hrxsGLFSxAiBDr9Ui1Xi",
+    "path": "Content/scenarios/castle/demo/Map/Materials/material_0_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=16sSiPR6GH1X-Yne3x4vY3cu6mcC_srxQ",
+    "path": "Content/scenarios/castle/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1u_q_EiNMIV2knCSYUmVAHXv5SCcYBDgj",
+    "path": "Content/scenarios/castle/demo/Map/0_castle_of_piria_-_rawscan_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1gJP5DrBqlsASoIifaAjNrRFxxhaIGcCL",
+    "path": "Content/scenarios/castle/demo/mount_carmel__north_israel_by_mediterranean_sea_merged/Materials/rastMat_011.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=11aSBwg5k_Lbk5HNqaR74vqsyKpbhkL_J",
+    "path": "Content/scenarios/castle/demo/mount_carmel__north_israel_by_mediterranean_sea_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GeltQ2EbTyQH5HjzLblGzMysbRy9-WZH",
+    "path": "Content/scenarios/castle/demo/mount_carmel__north_israel_by_mediterranean_sea_merged/0_mount_carmel__north_israel_by_mediterranean_sea_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1p38g3MZ3fPAMD4ouKjJgT_fZ528wFWGY",
+    "path": "Content/scenarios/castle/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Materials/Material_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1MLxPUw_23U4JGCqGT6cWyLLwV4P0GSn3",
+    "path": "Content/scenarios/castle/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Textures/0_Image_8.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=15YUtwNsT1Otx3JlpIfEr_mYjKdwXOsZL",
+    "path": "Content/scenarios/castle/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/0_Skybox_Material_001_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1O87SiQeW08z8O_LxGJ1x2IoHCIJC53HA",
+    "path": "Content/scenarios/christ/demo/95759c3b26a9413a953868211e4718a7_merged/Materials/Material0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1JfzqMauDwxM3ME7B0mUcJOfxFoBlhZiF",
+    "path": "Content/scenarios/christ/demo/95759c3b26a9413a953868211e4718a7_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1e24cb9wTc4qnds4zlKWsuD1sI6l27lg4",
+    "path": "Content/scenarios/christ/demo/95759c3b26a9413a953868211e4718a7_merged/0_95759c3b26a9413a953868211e4718a7_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1DLMDqCYMg0-3RMahOKgSHMuESrinRW8a",
+    "path": "Content/scenarios/christ/demo/donno_land_merged/Materials/Donno_LandMat.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1yw7dnFKLIUmDnb8SwY1kyRbofkeVdZaX",
+    "path": "Content/scenarios/christ/demo/donno_land_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1SU71n4qbBm5SyVAKqHt_daP3haJpKaFD",
+    "path": "Content/scenarios/christ/demo/donno_land_merged/0_donno_land_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=18ThrZcaGowGcxcWjZ0VsywDwLvGIiNpB",
+    "path": "Content/scenarios/christ/demo/Map/christ_the_redeemer_rio_de_janeiro_merged/Materials/material_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1snnTebqkCLuDc3jApI5dgNXUEPwPJEiV",
+    "path": "Content/scenarios/christ/demo/Map/christ_the_redeemer_rio_de_janeiro_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1XNflX1qMGhOMLJIu1w2ThrW4y5Dh13Eq",
+    "path": "Content/scenarios/christ/demo/Map/christ_the_redeemer_rio_de_janeiro_merged/0_christ_the_redeemer_rio_de_janeiro_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Jew148gdf58cxC5gFLwDQHW3NjuDRkeZ",
+    "path": "Content/scenarios/christ/demo/Map/Maps/christ.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=16I3VAnZJqBHd_pkdOTrHYucE3cmS5B5Y",
+    "path": "Content/scenarios/christ/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Materials/Material_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1aVzvHyygMvBxolwX5PGUN5Gex5rdQCqa",
+    "path": "Content/scenarios/christ/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Textures/0_Image_8.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1XBRjJGCEnIiXgJK5okJSR56S0Vqr7hWd",
+    "path": "Content/scenarios/christ/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/0_Skybox_Material_001_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Do-YU_EWPqIhAB81OHkj3sYI5xN3boT_",
+    "path": "Content/scenarios/church/Assets/Meshes/city.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1zjPh0UTGJ29gk7HZfNc8qSGXPcrjDkrm",
+    "path": "Content/scenarios/church/Assets/Meshes/Export_test_9.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1FMc8Ge7M3078XrOXHw3w5-A_NciAfwNS",
+    "path": "Content/scenarios/church/Assets/Meshes/Export_test_91.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=151mJoKLcbs_EiDKD2dKPT1JnlSfegblP",
+    "path": "Content/scenarios/church/Assets/Meshes/Export_test_92.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1g9PCOojrBb4MsOCxf9kxkuVab87uoJDx",
+    "path": "Content/scenarios/church/Assets/Meshes/Export_test_93.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1M6Zax-wdrvj1QlrniI3FrF5n3RL5y-iR",
+    "path": "Content/scenarios/church/Assets/Meshes/Export_test_94.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1910pduiKYQsbjAdh3ar1gJcgHBULkfZa",
+    "path": "Content/scenarios/church/Assets/Meshes/Export_test_95.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1F8bdp7N-yN8OXqTPRrrP21hmuuQtRITq",
+    "path": "Content/scenarios/church/Assets/Meshes/icity0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=11axsqkdOG_L0KPmmk0xgcjwuUZ-Z8_VI",
+    "path": "Content/scenarios/church/Assets/Meshes/icity1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1P5KmQzgsPWTZRG0DS39hkMannrw6_hsv",
+    "path": "Content/scenarios/church/Assets/Meshes/icity2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1FR5-ILlhmdDouO3TeEBSLoAeI13njm9N",
+    "path": "Content/scenarios/church/Assets/Meshes/icity3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1_Bi2NCazV6ZWQExisRwkj54uD79wZ8dv",
+    "path": "Content/scenarios/church/Assets/Meshes/icity4.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GqLf8spcFLfoBq7bMg07R2oCjJoyGfjD",
+    "path": "Content/scenarios/church/Assets/Meshes/icity5.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1p_5B6IgdHf1sP4No2a2s3xvPzrfc__iN",
+    "path": "Content/scenarios/church/Assets/Meshes/Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1gY9Ng2Y5pyeKP129ydheIdm5tccEgOUk",
+    "path": "Content/scenarios/church/Assets/Meshes/material_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1MvDWW9PzNDYl1z-RxBa2QgYVla9w0FJH",
+    "path": "Content/scenarios/church/Assets/Meshes/Material_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1KOtbIe1YKsbONlot7MhPzrJWuvPC8LIh",
+    "path": "Content/scenarios/church/Assets/Meshes/Material_007.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=12CLQplUaccjo-n8ftWmD_2nhySalCZck",
+    "path": "Content/scenarios/church/Assets/Meshes/model.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1dBNOtBPtqQi91M1clxvZc-x2pXWn_xEO",
+    "path": "Content/scenarios/church/Map/Maps/church_BuiltData.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1b6PH_emYhLtLSGPkFwEf3mSanGgJFzEF",
+    "path": "Content/scenarios/church/Map/Maps/church.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=16CJzhQG2SBDUVH89Gsm7gTUkmNKNVsBo",
+    "path": "Content/scenarios/outpost/demo/Map/Maps/outpost.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1toD5_kAYJtmsdw9TikUI1bcO1o2JCXJY",
+    "path": "Content/scenarios/outpost/demo/Map/Materials/material_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1hh-_A0ICqinlYvBzKpPuaGejhBSNkt8K",
+    "path": "Content/scenarios/outpost/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1TVovEh-GVI69IQdKlVYuQ47SqZUos2tl",
+    "path": "Content/scenarios/outpost/demo/Map/0_wood_island_life_saving_station_-rawscan_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Wy5-TU11Lpqt9DOeN27YAclLHekp96_5",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/20250425_005_RC_LOD0_u0_v0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1etI9EsPK8ukqCTu-BjOhLHvrkY_vEacv",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/aiStandardSurface10SG.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=10HRcGmdFr0xrhTSYIxHV6TJZwQhM3yKQ",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/back.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1qLYTJKjgrGFlD-l0Em07ccj10sJuFQoR",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/BaotaHLL_1001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=15orKNgirKiKpwEjwWvED791cClefBbeg",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Deckelpokal.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Cx8oxA-7iOHSzO-Zm2d5topIVuGMb_zh",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/DETAIL.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=18zDGdmHH_zuK465vu0PoKxC5oUeDw1XT",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/details1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ldkYA4Qr3u97KWDsgYBwn2XVHGreL8Ik",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/doors2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1hHD2d08BFKvH1NNb6g6746yI8TTGYhxu",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/ENV0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=14RCUpjtkpNUqiplFJMe1eKqzLQzANBTo",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/ENV1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1b1Yv-Wof0hE_ii70vKLBBwX0PIdopI_6",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/ENV2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1isH-BiikyI8Ok9YMYWlTy2kpgDM4OxVb",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/FORGETTEN.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1H_cBgCjBTAXTPYpEHWFWRrtg1t2OYpQf",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Forgotten1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1PxGz7dFy0gKgZcYM5cIjjoyjCzwIyMLm",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/iback.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1keymii3iioJBAC9cTP9W8T6y-I2XgDOs",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/ideng.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1N7b_-BZa6AsPNLybdHB7KOzZeC5DFwSw",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/IDOOR.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1YowZ2isFYp_2Dj6qKaD95xMOeWr2sQ5z",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/ihouse2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1SJHN1AG3aehmSup0TMGBfUJOBNjC6phP",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/ilion.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1BNRwIXdmz2RuKHa3QYRFvk3X5W2Zl7oQ",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/iluzi.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1lcqgq4bDMmg4iWt2cGcdl0OGpf_SrN-A",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/IWALL.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1QBeoprtdb7_y_IBovbJJ7smxQSE0s2Om",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/material.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1NJm8xwj_xLcJ6z5lXInsFBhNAbP6Tw9g",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/NORMAL_ROOF.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1KfxoecRuqSx2zc_xvdWrc8pENhXZ9YDm",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/palace.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1bzD6JTrwnGmGWCoiyGDOxBkx6zRldLhM",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/PER.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1UEv-qAn_JxZL6DFrFWjqj4-n4SoQi6Fs",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Peregorodki1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1OCgwLlj4G2Okumi03Eqn4_yAGaNmq6Jb",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Roof1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1xLlGANPBmkGmsPQZ4_eLE3-JssoQ3NOM",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Taiwan_lukang_temple_Material_u1_v1_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1q0kvznBzct9Hgo2D2KXoJxFJzwUctkAn",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Taiwan_lukang_temple_Material_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1sZ2qE1bPia8T3MvVU0TDtvMhHoqf6Q0z",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Taiwan_lukang_temple_Material_u1_v2_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-srEs7HBRMmnzq1n5LZ_TmKP_mrtg9si",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Taiwan_lukang_temple_Material_u1_v2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ZGaOiIdN0Qzgw45FjIrxCN4ZRYivD3ZI",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Taiwan_lukang_temple_Material_u2_v1_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1K3dOP9UYiFTuRXzVyqGHOv_GXxDbVwMC",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/Taiwan_lukang_temple_Material_u2_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1hfI8Nch26ZQGMLBHD6TDFrOTZZSU7N2U",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/tex_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ZEy-Se_E5FL3rIjl54fhFg42mmMp0pmY",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/tower1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=134bqETLeMFqm1ivgOuWCjLAgykNBb6lv",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/wall_1_1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=13jwMDnHoyin9VOVGX_1Iiem7wnf1VTnO",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/WALL_3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1_KT4OTK13YTEbYPrOGg5qxoRSZMbz_7Q",
+    "path": "Content/scenarios/pagoda/Assets/Meshes/wall_resh3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1OsP0t8TQ-QQRRz_DVpMpany7Djsrs8uH",
+    "path": "Content/scenarios/pagoda/Map/Maps/pagoda_BuiltData.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=178dT8COXQNmkaFd7WbGfxEgNAhJh-pg9",
+    "path": "Content/scenarios/pagoda/Map/Maps/pagoda.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Jb4Pk66KyrnEVyUUF8pfZ15wdxwmV3QL",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Maps/pisa_cathedral.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1VfFpyYkWpS7Ky9JJLSWhK5VTtfwkmv0V",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00000.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tcn5PA5r2keYj-hB1QuP0--0l6p4fl7r",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ObKFQb3eZi9dEmXbUkUPklfyEKpABvVp",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00002.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1LASE4eC5Xi6mFfCrWdKv24ly2LnMXjVp",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00004.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1hbJ4Y2hENuTEA5GR3SuyABtVuIkqZJln",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00006.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Tg8528eDXPay3kuoUSAzFVS0sQSNaWio",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00007.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1qJwHPhH_GrsaJqkH7rO71NGzdLN9wDrG",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00008.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1XuU_5SMgGGjsNHcbFX_qXNhp0FFgCe5x",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00009.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Q7iOFlilDarGxufKXeuwQvf1Vak6asb2",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00010.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1p1kGi-PXSQDuA1meetRaE1wjdNNjkHnP",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00012.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1zbv98dPoIFUzy3sLw0EOqvnDGskAWPZw",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00014.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1PLNg6Et2QZPdotg_2pxcqRe08S76FwXa",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00017.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1dxHHj7974OY7nZrBmEN4bB7eHP1I1yEn",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00018.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1WKqH9CHodVvDsIkL1lNxN1ZM35L7Rbgk",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00021.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GHX1-R2m5hZVAnOQgimduXdgrHcKZn11",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00022.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=11XBnW4rRzXLiOxpqI21GS7izJBLrpBcT",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00024.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1a9JHBMC6PdxJH6KnuJ_sNkpKxUpAILp1",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00027.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-kjlaXmTzoX3q8mskAk7A25OWmabaURP",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00028.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1j4dJFan3kmIOSp0diFHc_0JmG-FK8tUh",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00058.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-wdZDSqg1AmyqZ5CvYD7x2qNJA_fcJkU",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00061.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1VlCQCt1UjsOuNzcYuFpTQg80NN1lzynf",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00064.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GCgJojdGm1HuIO4LaIH-PKV6IGdOFAGl",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00067.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=14gu-yLlLyxuz3DMlpVhzb6YrCpicFqa0",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00080.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1moQOVh7yFxsBvVQGE_o1tjeHbIoEgyDw",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00083.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Pan4IoDsy3TU7w04u7Lf2Fr-80Y2L5lY",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00098.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1TLv2NhW1LsO2qwqQr_cG6FOf_kFCLKTD",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00101.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1DC0D50TQ_Lz53aeQYRHyUsIQeT8AmjVx",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00126.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1eB1YKakV5z7xUC96wc5IyEUdJmFZxK2N",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00176.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1jrH-8eKFUoBnE9w7Wtj6k10iM_1esvOw",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00178.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1bof0ZN8QJfhKfE7Sw7QTws_gBxxSFSzY",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00188.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-liAvZdetziaWTmHVYj7nrsGKUcr7lfM",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00191.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1AuSyYXIuPh0prSDYyL5au_3tD16ZcaMi",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00194.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1haBrMkU-IwIdSPGEbqZ-Aa_U6eRQwaED",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00204.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tUKEcK7lvAdfcYM4Rpyr3bidfZXLV2cd",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00207.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1pacOZtSbeVVQqA1a3WHJJA4qq0zcp4SP",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/Materials/BuildingMat-00238.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=10CaX9mvv8xoM_O4wqfYzWhKIeZcl8XuS",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Materials/material_0_006.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=17I6Nj3haOEjypLeJbh3a2YGFY0XV92mt",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1f9SAbcIjX-Nz7w43gNGUccN_kwyLsePp",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/1_Image_1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1TLZjb5Uw564o9_Tin7FTstlaDnkQQGMY",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/2_Image_2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1f3HLNO6Fa-HE_xjsR6j40YrZAWE11NG2",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/3_Image_3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Cz1HcZe2YZc6-3oVRdPBSI91Aw3AF1e2",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/4_Image_4.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ylVS5vw09d1DcccehWt4McNtwxJCvYtO",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/5_Image_5.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1fNoEATSztI_oXFJECVb3kgA6k7D-Bqp9",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/6_Image_6.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1mv8Ywtqq10gXxTtG4V1p4xotZ_qocuss",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/7_Image_7.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1inoginVcpk3dMG-X0Mb2szB0TN3T-QIl",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/8_Image_8.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1_WwdL4k7oAWF-9Cx-DlWfbwdTG5U0GRt",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/9_Image_9.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1cpYTHH4vVzlTyXblQdMAsSKOIYOXE8Hz",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/10_Image_10.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1oNsZrdapzksRyLCiYIJ1CoDsK7j-Heis",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/11_Image_11.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1PJkabyZxduNw3eTZUTkpll-raLDU6kV8",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/12_Image_12.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=10Z1Zp65BzKa5Cjoptv9L9RRLR9BAmdJW",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/13_Image_13.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1MsJpZhv76ONcXrrPFcmEJXerFhBUxrhr",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/14_Image_14.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1eUnk7ylAsSGzE-U46yPvteFaQinJvs17",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/15_Image_15.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1o8aEStp44wrU8fuVBJx6loInnPROb7-k",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/16_Image_16.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=110vU8Mx4NmaDIryOnwUtrpUbVGzxl8PN",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/17_Image_17.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=198OXc8usJjqVTpDoIAxQ8zAF9SdQBhij",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/18_Image_18.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=13q4EvhAMH_HX4b_LhMqcaNURvGsklDuT",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/19_Image_19.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ZWv0zv1KT34O1PdL6yHEO3ArPX2yPYQp",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/20_Image_20.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1HMKjla4SR_0Kb77pXfYv8nIps3cBe-8E",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/21_Image_21.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GK7hWcOiJuijPVlS0HsANQEDHRiDm8Kb",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/22_Image_22.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Q2Y1Zh8OzHM1nr5fASm8gpekLiLZoajg",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/23_Image_23.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1LafnjbyQYMc_4CG6De5ey_WqXcoZWKzI",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/24_Image_24.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1wrbGKfZYS82wEBlVSYuUxohrk6Ghx2Zf",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/25_Image_25.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GzVzv2TZjMhiprlQ5kd_ZE44gL_yTlXJ",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/26_Image_26.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1rWIPUG6xoSMR3SFMXVKLxezOyXFXeIXz",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/27_Image_27.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1BjKuxkMDPmbgGKL9Le-4-RVi8NO5BJPq",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/28_Image_28.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1IJLrFYFa51tEVjhQUMqaXLj_ZTr3CHiq",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/29_Image_29.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1w2ua-hh35-Ys8DNS4hJrExd9c11JnVG4",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/30_Image_30.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=18TRgXz7jC1UVHK7lNJ3Ca3RKwNUciALo",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/31_Image_31.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1RG5zYPlTCy8LxpzHlV9gScrUCJK-Vlok",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/32_Image_32.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1asVG52ifxJqm1RTS764n1IO1nOoXiaGo",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/33_Image_33.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tRBi4AG1SSS2Z8QCEVshqBc1lFAbS77g",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/Textures/34_Image_34.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1f7zL7ZpDlYlF9yYjp_Nq5WE6m1BKwpOe",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1dQ4oAPc-BuXkfBBsffS392qqJNVGjWYi",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/0_leaning_tower_pisa_italy_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=17D4p1D5mCPnUp4DmnKefc3-Yu_L2QRYK",
+    "path": "Content/scenarios/pisa_cathedral/demo/Map/0_learning_tower_of_pisa_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1IxxP8X8lUZ2ETgSr9xS27jJVnE5SrevE",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Maps/sacre_coeur.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Y-MMMQfcYqtWpRt70BV6CfJW8OisR9IM",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Materials/Sacre_Coeur_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=17vkqkaVbec9FDQwt5kcf8yLTtTcu-To5",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Materials/Sacre_Coeur_u1_v2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1NvifNzBOF164scmnFWw2ceiYWG6yPM23",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Materials/Sacre_Coeur_u2_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1e-MxfQ4qa6rdDOrS3XSN84W483Xjmx_p",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1M8Rvq7Mintq89hu_Tap8bgxpuZr6b1f9",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Textures/1_Image_1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1w9qALw7BEaVlyYA3Y0qUdo3PxQ_yEG0P",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/Textures/2_Image_2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Hczp9UgCzVMJVfqmK36nuBJpgfBMeQz3",
+    "path": "Content/scenarios/sacre_coeur/demo/Map/0_sacre_coeur_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1L54R3qiDud4-dW4bCOOgylujdAO7Qh5M",
+    "path": "Content/scenarios/sant/demo/Map/Maps/sant.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tOeF2aRi4Fs64Wwz7eN73xa0GOutXMsN",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1gxSwn0jvfFyiImsWzpTl5nK5nA2-J-Ub",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u1_v2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1OKgWjnGrroji4WyjO0GERDrAOY6Ws3T2",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u1_v3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1qCcXS4VFwgLV0VTlMqaFvPR-tgtJAD0z",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u2_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1xCyDeBzArxO8Ri4RN6qZrqcp__L1d8Uu",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u2_v2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1TUcNGcnYX1Vuo_vyVLxyEXeTl8-7nXwn",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u2_v3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=14kg5ObYyMUbe3HZtktR_fXmhYjvJf1ek",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u3_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1KK4SnyOZLuPcOsPSQ_Hw8RELVQZzQCRu",
+    "path": "Content/scenarios/sant/demo/Map/Materials/climent_3M_16384_8tex_76xcent_Material_u3_v2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1fhUhcREO2jxVP4pz6BdEfzmBES9fTFr9",
+    "path": "Content/scenarios/sant/demo/Map/Materials/Mat1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1qHdiNzj8KYjoiUOgJ6x-SVm7sfQg7IIX",
+    "path": "Content/scenarios/sant/demo/Map/Materials/material.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1sAjlpEmASh-a3uThy0MEOpu5WeGEENNk",
+    "path": "Content/scenarios/sant/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-1WGy6x1Cw5WPlZZ3Vm3vZiOFyGCqksG",
+    "path": "Content/scenarios/sant/demo/Map/Textures/1_Image_1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1jXZnY-fpbN6Vj78_Dda5B4902DNLkunr",
+    "path": "Content/scenarios/sant/demo/Map/Textures/2_Image_2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1fQ82EgaUQzQIaY3BwzarrJGU7HwZq_Bb",
+    "path": "Content/scenarios/sant/demo/Map/Textures/3_Image_3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tmi9KMcVwMgV6O2GlPnO31muEKEbr54c",
+    "path": "Content/scenarios/sant/demo/Map/Textures/4_Image_4.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1JSsOgRYTlPFxhUWqUx6-KJPh6ZebI-fa",
+    "path": "Content/scenarios/sant/demo/Map/Textures/5_Image_5.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1aAgSiW9kkz0MCGdF36bRkMWpdkBO41I1",
+    "path": "Content/scenarios/sant/demo/Map/Textures/6_Image_6.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1VSPcQQbnGJb_cIED-T2Ntr-3tCGnyfS0",
+    "path": "Content/scenarios/sant/demo/Map/Textures/7_Image_7.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=12hj9iOCjOszEgv-bhULlddGDbFIJSHyA",
+    "path": "Content/scenarios/sant/demo/Map/0_Sweep_1_Mat1_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1sN5TjpkjRIuiKs72ewr7ifGJA8YdzM-z",
+    "path": "Content/scenarios/schloss/Assets/Meshes/20200703_L7722-045-01_Kloster_Zwiefalten_750Kpoly_1T4K_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1yLr2FwRR9U58Rz9xuDNL_PJiJqRDYbLc",
+    "path": "Content/scenarios/schloss/Assets/Meshes/20220622_L8512-008-01_Schloss_Beugen_01_750Kpoly_1T8K_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=159ZkRbirFWufM-FdQJGsvRCEsBKQFzLr",
+    "path": "Content/scenarios/schloss/Assets/Meshes/20230629_L6720-001B-01_Schloss_Horneck_750K_1T8K_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Y0bIxDtBQnQA-sf8nJ2GpPNDdFAm-TIL",
+    "path": "Content/scenarios/schloss/Assets/Meshes/ihouse.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tXkdesXHuRMRF2cqL69UBp66d7ScKYqQ",
+    "path": "Content/scenarios/schloss/Assets/Meshes/ihouse1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1s89eQHQINPkzT51lqxQa_D6We73Gubcu",
+    "path": "Content/scenarios/schloss/Assets/Meshes/ihouse2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1IxuBNIFa7xzpAWLmCmftng9q8xyt-I6J",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1im_Vuej4oT80G2iqVgFB9RnhH5WVIeLN",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Image_1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=12IwElS3NTHkr_YsTtWUuVu6Cn-IzNzrb",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Image_2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1LlqeHw_5DyVD9ziLQKqz0kFvcUmO_fXH",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Image_3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1zRaPxwluv5VOXoPo28fYFo82t3-0sCGY",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Image_4.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=17fskUJI__XartG5_mynoSWTOCkuiyIrT",
+    "path": "Content/scenarios/schloss/Assets/Meshes/imountain.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1_cQU_pWdN6MmVCwTy0_A8DysytmxPwu_",
+    "path": "Content/scenarios/schloss/Assets/Meshes/L7724-006-01_Benediktinerabtei_Wiblingen_750Kpoly_1T8K_u1_v1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ku7CrQqdP9lnRdfqUPOqiPzhCnKOtL9p",
+    "path": "Content/scenarios/schloss/Assets/Meshes/material_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1nmEC6JPJoT1CjloGkPOxJHuPFdRUXCfq",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Material_002.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1SPa0j18m03pS9R7xPJSg00WdtYICgwmy",
+    "path": "Content/scenarios/schloss/Assets/Meshes/Material_003.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1MIkS_e0rU96DXEEE3skwaW1xCkWrblbB",
+    "path": "Content/scenarios/schloss/Assets/Meshes/MHOUSE.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1WSzjqJC7bClwYxHnTkdozIJ0hwLjMmeL",
+    "path": "Content/scenarios/schloss/Assets/Meshes/MHOUSE1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1kZ0FKLD9UqX2bYF298GW1FzpcljChBSF",
+    "path": "Content/scenarios/schloss/Assets/Meshes/MHOUSE2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1jtzrY60v-SRzw7RmKxv6sko-Fvpkqw8E",
+    "path": "Content/scenarios/schloss/Assets/Meshes/mmount.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1I0UdLKB77qqgUDsoh8nlV2phnSNnUQQw",
+    "path": "Content/scenarios/schloss/Assets/Meshes/model.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1DB7xxCn8uNDL7ta1saX1XH4ktPgPPFP2",
+    "path": "Content/scenarios/schloss/Assets/Meshes/mountain.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1wRwSrHM_HePVe6TD_3poPAKoKkDMonZ2",
+    "path": "Content/scenarios/schloss/Assets/Meshes/MWOOD.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1oRbS6mqaAoAK5kF_LtQ5yc-01W9rkRzE",
+    "path": "Content/scenarios/schloss/Assets/Meshes/wood.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Vj64fOq5vqbRAw6ngwBCNU1bH1XVxBFY",
+    "path": "Content/scenarios/schloss/Map/Maps/schloss_BuiltData.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1KMMUulkXL7R5WwCKdFCUaLUWJbHJ7wbI",
+    "path": "Content/scenarios/schloss/Map/Maps/schloss.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1K-evgyGrHXwiHtGUf5jUY8rgv0o3XVRk",
+    "path": "Content/scenarios/statue/demo/95759c3b26a9413a953868211e4718a7_merged/Materials/Material0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-DxR-6GfmNi7z10RY11H5tBKsasynszg",
+    "path": "Content/scenarios/statue/demo/95759c3b26a9413a953868211e4718a7_merged/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1bmXNsY3NjSqX6cI3vnE68wEVi4qmvFHR",
+    "path": "Content/scenarios/statue/demo/95759c3b26a9413a953868211e4718a7_merged/0_95759c3b26a9413a953868211e4718a7_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1qU7_4YimEWF5TsC5a4FvMi8QEq8Y6JNu",
+    "path": "Content/scenarios/statue/demo/Map/Maps/statue.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1IJFIQUSRAlSww7HT0TQ1ppiu1lyCAtJs",
+    "path": "Content/scenarios/statue/demo/Map/Materials/Material0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1iWqu1FH5XKlR6wexf-uulLBFUIrhB9e2",
+    "path": "Content/scenarios/statue/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Eqazor_JiP1-wo6235o-5VgRCxhhjIBQ",
+    "path": "Content/scenarios/statue/demo/Map/0_statute_of_liberty_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1HoYDXa-BtnhjAZrNvuxPnKSB9pQIDFmz",
+    "path": "Content/scenarios/statue/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Materials/Material_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1osOwDQZ8TTHFPKG_SswV0obtbsWp2J8N",
+    "path": "Content/scenarios/statue/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/Textures/0_Image_8.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Pvo5SR0xUf54HRus5hMnARGE4FKMc6uE",
+    "path": "Content/scenarios/statue/demo/tristennnoeckl_mountain_peak_2465_skybox_centered/0_Skybox_Material_001_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Ir4lGCCOCNlgCFKGHiD7fmhVkVTlDL8y",
+    "path": "Content/scenarios/temple/demo/Map/Maps/temple.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1_lvpWFktRZ2Cd0skXihKwPUvcrlC5zCc",
+    "path": "Content/scenarios/temple/demo/Map/Materials/20241224_005_RC_LOD0_u0_v0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1SYAe3o6jCbqegUQaqAY8B0D8dJ1mfP-E",
+    "path": "Content/scenarios/temple/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Fp2dfpeHRjPKnBPE8rK1h6Mni11QlVU3",
+    "path": "Content/scenarios/temple/demo/Map/0_jiaoshan_dinghui_temple_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Dh90XxDutCWHs6s0e-llNP2WuVHK4nMd",
+    "path": "Content/scenarios/tower/demo/Map/Maps/tower.umap"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1E6YGbUgHzjD9vNLyxHhWykP5lkxn-6Gq",
+    "path": "Content/scenarios/tower/demo/Map/Materials/20241224_003_RC_LOD0_u0_v0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Lvy3yt7_2oFtUL72HUlBfymvNCecDzSQ",
+    "path": "Content/scenarios/tower/demo/Map/Textures/0_Image_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1YSPTlH2S26HuL2You808THScWsUTjI5x",
+    "path": "Content/scenarios/tower/demo/Map/0_jinshan_temple_cishou_pagoda_merged.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1An8E1OO6Je8pHanIWUJ3S7MjmIkWlIG3",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Glass_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1tGAO030-kZdPPxUIpaiBgd24g9Xxapj2",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Glass.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1lJrzu9Bzen5-mHCA0eOOkrRIH1-K3A5N",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Halikko_Windmill.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1QZrJac9MKL5VDI6_iEHuthVDWqt15cZl",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/ilake.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1aHVu0su7HzB8kLN8YI98EjxeH7E1oGy4",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/lake.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=11D2wojbcn1G6Zbud6MYaRe10rJsfYsEJ",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Lamp__0_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1UFmg2sO_qU0zjc-lZ9gmAKqxHaTPsZwp",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Lamp__0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1X9NMNJXaBO1uUHr-OXpPtqZo5kIqup8d",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/material_0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1szuYTjQafbk8c261bwQI3UypWigwEymd",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Metall_001.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1TMLE-hCitb5YMds5Mpnw1QKdalzKWx9L",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/Metall.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1GcvhPjJqHOB45nyUuIUqDYfXWWfKmqC6",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/model.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1b2ds049geTI8Vq-nMcPpwrPDE2hEIPv9",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/model1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1rwTg1_7aW3J1Z98p1tilFNFVFT8EM42g",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/model2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1yLavCdUdR8mSAAYqjEjHhx4UyL5_Lc3O",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/model3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1oqKCoVhjj_YwktS_MPm1SB3Lzatz1XFm",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/p_e.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1rHbRmZiI6WIm_bDPVmK-x8q-wguVc-i9",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/p_e0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=17I8hYMGWjHwbTUWUWgCFE1zBOtS2i3Dw",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/p_e1.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1ES75MEDFJ_KZ617Dfkq2yQk13SUQay58",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/p_e2.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1RUarFJUvlasm13CwptEnP9ynsvRDaEaq",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/p_e3.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1_QQ3vY2ZPSkqksOra5xNVVI_C0wHUzoV",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/p_windmill.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1AfKralS-UsYtgqWAHSlxZaT8hMAYV6md",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/windmill_Object_4.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1rpfM5nspRGUbA-MxiFhGQvZ6TuC4AAAu",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/wm_meters0.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1HpgOhpDN8tpp1x8qjqO3qSMafBlRFNPi",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/wood.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1sMvZ65fKUSp0bkA0bEWN3_f6rGjKNStC",
+    "path": "Content/scenarios/windmill/Assets/Meshes/windmill/WoodLog_Plank.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1HF473yK51m2Pruy9_6VJxB5JK0yoPLMb",
+    "path": "Content/scenarios/windmill/Assets/Meshes/BaseMaterial.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1-8RYO5SWrwuepjkEwRFoakB6Ysw7pk8e",
+    "path": "Content/scenarios/windmill/Map/Maps/windmill_BuiltData.uasset"
+  },
+  {
+    "url": "https://drive.google.com/uc?id=1Cigwyk2RgzmVvm3LgIuoR5SY0Z-Picm_",
+    "path": "Content/scenarios/windmill/Map/Maps/windmill.umap"
+  }
+]
