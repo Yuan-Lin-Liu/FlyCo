@@ -36,6 +36,7 @@ touch "$root/.docker-data/home/.zshrc"
 
 args=(--rm -it --name "flyco-$scene" --network host --ipc host --gpus all
   --user "$(id -u):$(id -g)" -e HOME=/home/flyco
+  -e DISABLE_ROS1_EOL_WARNINGS=1
   -e DISPLAY -e NVIDIA_DRIVER_CAPABILITIES=graphics,utility,compute,display
   -e "FLYCO_SCENE=$scene" -e "FLYCO_MAP=$map_name"
   -v /tmp/.X11-unix:/tmp/.X11-unix
@@ -47,6 +48,7 @@ args=(--rm -it --name "flyco-$scene" --network host --ipc host --gpus all
   -v "$root/.docker-data/logs/ros:/home/flyco/.ros/log"
   -v "$root/.docker-data/logs/ue:/var/log/flyco"
   -v "$root/planner_simulator/script/setting:/home/flyco/Documents/AirSim:ro"
+  -v "$root/planner_simulator/src/flyco_planner_manager/launch/demo/param.xml:/opt/flyco/planner_simulator/src/flyco_planner_manager/launch/demo/param.xml:ro"
   -v "$root/perception_predictor/src/sam_tracking/ckpt:/opt/flyco/perception_predictor/src/sam_tracking/ckpt:ro"
   -v "$root/perception_predictor/src/mesh_predict/resources/checkpoints:/opt/flyco/perception_predictor/src/mesh_predict/resources/checkpoints:ro")
 [[ -d /dev/dri ]] && args+=(--mount type=bind,src=/dev/dri,dst=/dev/dri)

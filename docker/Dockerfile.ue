@@ -1,5 +1,11 @@
 FROM flyco:noetic
 
 ENV DEBIAN_FRONTEND=noninteractive UE_USE_SYSTEM_MONO=1
-RUN apt-get update && apt-get install -y --no-install-recommends mono-devel \
+ARG APT_PROXY
+RUN apt_options=(-o Acquire::Retries=5 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30) \
+    && if [[ -n "$APT_PROXY" ]]; then \
+      apt_options+=(-o "Acquire::http::Proxy=$APT_PROXY" -o "Acquire::https::Proxy=$APT_PROXY"); \
+    fi \
+    && apt-get "${apt_options[@]}" update \
+    && apt-get "${apt_options[@]}" install -y --no-install-recommends mono-devel \
     && rm -rf /var/lib/apt/lists/*

@@ -30,6 +30,7 @@
 
 #include <Eigen/Eigen>
 #include <cmath>
+#include <limits>
 #include <iostream>
 #include <plan_env/raycast.h>
 
@@ -42,14 +43,10 @@ double mod(double value, double modulus) {
 }
 
 double intbound(double s, double ds) {
-  // Find the smallest positive t such that s+t*ds is an integer.
-  if (ds < 0) {
-    return intbound(-s, -ds);
-  } else {
-    s = mod(s, 1);
-    // problem is now s+t*ds = 1
-    return (1 - s) / ds;
-  }
+  if (ds == 0.0) return std::numeric_limits<double>::infinity();
+  // Negative rays on a cell face cross it immediately, not one voxel later.
+  if (ds < 0.0) return (s - std::floor(s)) / -ds;
+  return (std::floor(s) + 1.0 - s) / ds;
 }
 
 void Raycast(const Eigen::Vector3d& start, const Eigen::Vector3d& end, const Eigen::Vector3d& min,
@@ -351,12 +348,14 @@ bool RayCaster::step(Eigen::Vector3d& ray_pt) {
 void RayCaster::setParams(const double& res, const Eigen::Vector3d& origin) {
   resolution_ = res;
   half_ = Eigen::Vector3d(0.5, 0.5, 0.5);
-  offset_ = half_ - origin / resolution_;
+  origin_ = origin;
 }
 
 bool RayCaster::input(const Eigen::Vector3d& start, const Eigen::Vector3d& end) {
-  start_ = start / resolution_;
-  end_ = end / resolution_;
+  // Traverse the same grid as SDFMap::posToIndex. Applying a rounded origin
+  // offset after world-grid traversal shifts cells for non-aligned origins.
+  start_ = (start - origin_) / resolution_;
+  end_ = (end - origin_) / resolution_;
 
   x_ = (int)std::floor(start_.x());
   y_ = (int)std::floor(start_.y());
@@ -368,14 +367,14 @@ bool RayCaster::input(const Eigen::Vector3d& start, const Eigen::Vector3d& end) 
   maxDist_ = direction_.squaredNorm();
 
   // Break out direction vector.
-  dx_ = endX_ - x_;
-  dy_ = endY_ - y_;
-  dz_ = endZ_ - z_;
+  dx_ = direction_.x();
+  dy_ = direction_.y();
+  dz_ = direction_.z();
 
   // Direction to increment x,y,z when stepping.
-  stepX_ = (int)signum((int)dx_);
-  stepY_ = (int)signum((int)dy_);
-  stepZ_ = (int)signum((int)dz_);
+  stepX_ = (dx_ > 0) - (dx_ < 0);
+  stepY_ = (dy_ > 0) - (dy_ < 0);
+  stepZ_ = (dz_ > 0) - (dz_ < 0);
 
   // See description above. The initial values depend on the fractional
   // part of the origin.
@@ -384,16 +383,16 @@ bool RayCaster::input(const Eigen::Vector3d& start, const Eigen::Vector3d& end) 
   tMaxZ_ = intbound(start_.z(), dz_);
 
   // The change in t when taking a step (always positive).
-  tDeltaX_ = ((double)stepX_) / dx_;
-  tDeltaY_ = ((double)stepY_) / dy_;
-  tDeltaZ_ = ((double)stepZ_) / dz_;
+  tDeltaX_ = dx_ == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dx_);
+  tDeltaY_ = dy_ == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dy_);
+  tDeltaZ_ = dz_ == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dz_);
 
   dist_ = 0;
 
   step_num_ = 0;
 
   // Avoids an infinite loop.
-  if (stepX_ == 0 && stepY_ == 0 && stepZ_ == 0)
+  if (x_ == endX_ && y_ == endY_ && z_ == endZ_)
     return false;
   else
     return true;
@@ -401,10 +400,10 @@ bool RayCaster::input(const Eigen::Vector3d& start, const Eigen::Vector3d& end) 
 
 bool RayCaster::biInput(const Eigen::Vector3d& start, const Eigen::Vector3d& end)
 {
-  start_ = start / resolution_;
-  inter_ = (0.5*(start+end)) / resolution_;
-  end_ = end / resolution_;
-  
+  start_ = (start - origin_) / resolution_;
+  inter_ = (0.5*(start+end) - origin_) / resolution_;
+  end_ = (end - origin_) / resolution_;
+
   x_ = (int)std::floor(start_.x());
   y_ = (int)std::floor(start_.y());
   z_ = (int)std::floor(start_.z());
@@ -419,15 +418,15 @@ bool RayCaster::biInput(const Eigen::Vector3d& start, const Eigen::Vector3d& end
   maxDp = dir_p.squaredNorm();
   maxDn = dir_n.squaredNorm();
 
-  dx_p = interX_ - x_; dy_p = interY_ - y_; dz_p = interZ_ - z_;
-  dx_n = interX_ - endX_; dy_n = interY_ - endY_; dz_n = interZ_ - endZ_;
+  dx_p = dir_p.x(); dy_p = dir_p.y(); dz_p = dir_p.z();
+  dx_n = dir_n.x(); dy_n = dir_n.y(); dz_n = dir_n.z();
 
-  stepXp = (int)signum((int)dx_p);
-  stepYp = (int)signum((int)dy_p);
-  stepZp = (int)signum((int)dz_p);
-  stepXn = (int)signum((int)dx_n);
-  stepYn = (int)signum((int)dy_n);
-  stepZn = (int)signum((int)dz_n);
+  stepXp = (dx_p > 0) - (dx_p < 0);
+  stepYp = (dy_p > 0) - (dy_p < 0);
+  stepZp = (dz_p > 0) - (dz_p < 0);
+  stepXn = (dx_n > 0) - (dx_n < 0);
+  stepYn = (dy_n > 0) - (dy_n < 0);
+  stepZn = (dz_n > 0) - (dz_n < 0);
 
   tMaxXp = intbound(start_.x(), dx_p);
   tMaxYp = intbound(start_.y(), dy_p);
@@ -436,12 +435,12 @@ bool RayCaster::biInput(const Eigen::Vector3d& start, const Eigen::Vector3d& end
   tMaxYn = intbound(end_.y(), dy_n);
   tMaxZn = intbound(end_.z(), dz_n);
 
-  tDeltaXp = ((double)stepXp) / dx_p;
-  tDeltaYp = ((double)stepYp) / dy_p;
-  tDeltaZp = ((double)stepZp) / dz_p;
-  tDeltaXn = ((double)stepXn) / dx_n;
-  tDeltaYn = ((double)stepYn) / dy_n;
-  tDeltaZn = ((double)stepZn) / dz_n;
+  tDeltaXp = dx_p == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dx_p);
+  tDeltaYp = dy_p == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dy_p);
+  tDeltaZp = dz_p == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dz_p);
+  tDeltaXn = dx_n == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dx_n);
+  tDeltaYn = dy_n == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dy_n);
+  tDeltaZn = dz_n == 0.0 ? std::numeric_limits<double>::infinity() : std::abs(1.0 / dz_n);
 
   dist_ = 0;
 
@@ -455,7 +454,7 @@ bool RayCaster::biInput(const Eigen::Vector3d& start, const Eigen::Vector3d& end
 
 bool RayCaster::nextId(Eigen::Vector3i& idx) {
   auto tmp = Eigen::Vector3d(x_, y_, z_);
-  idx = (tmp + offset_).cast<int>();
+  idx = tmp.cast<int>();
 
   if (x_ == endX_ && y_ == endY_ && z_ == endZ_) {
     return false;
@@ -465,6 +464,10 @@ bool RayCaster::nextId(Eigen::Vector3i& idx) {
   // X axis, and similarly for Y and Z. Therefore, choosing the least tMax
   // chooses the closest cube boundary. Only the first case of the four
   // has been commented in detail.
+  if (x_ == endX_) tMaxX_ = std::numeric_limits<double>::infinity();
+  if (y_ == endY_) tMaxY_ = std::numeric_limits<double>::infinity();
+  if (z_ == endZ_) tMaxZ_ = std::numeric_limits<double>::infinity();
+
   if (tMaxX_ < tMaxY_) {
     if (tMaxX_ < tMaxZ_) {
       // Update which cube we are now in.
@@ -491,15 +494,18 @@ bool RayCaster::nextId(Eigen::Vector3i& idx) {
 bool RayCaster::biNextId(Eigen::Vector3i& idx, Eigen::Vector3i& idxR)
 {
   bool pflag = true, nflag = true;
-  
+
   auto tmp = Eigen::Vector3d(x_, y_, z_);
-  idx = (tmp + offset_).cast<int>();
-  
+  idx = tmp.cast<int>();
+
   if (x_ == interX_ && y_ == interY_ && z_ == interZ_)
     pflag = false;
-  
+
   if (pflag == true)
   {
+  if (x_ == interX_) tMaxXp = std::numeric_limits<double>::infinity();
+  if (y_ == interY_) tMaxYp = std::numeric_limits<double>::infinity();
+  if (z_ == interZ_) tMaxZp = std::numeric_limits<double>::infinity();
   if (tMaxXp < tMaxYp)
   {
     if (tMaxXp < tMaxZp)
@@ -515,11 +521,11 @@ bool RayCaster::biNextId(Eigen::Vector3i& idx, Eigen::Vector3i& idxR)
   }
   else
   {
-    if (tMaxYp < tMaxZp) 
+    if (tMaxYp < tMaxZp)
     {
       y_ += stepYp;
       tMaxYp += tDeltaYp;
-    } else 
+    } else
     {
       z_ += stepZp;
       tMaxZp += tDeltaZp;
@@ -528,13 +534,16 @@ bool RayCaster::biNextId(Eigen::Vector3i& idx, Eigen::Vector3i& idxR)
   }
 
   auto tmpR = Eigen::Vector3d(endX_, endY_, endZ_);
-  idxR = (tmpR + offset_).cast<int>();
+  idxR = tmpR.cast<int>();
 
   if (endX_ == interX_ && endY_ == interY_ && endZ_ == interZ_)
     nflag = false;
-  
+
   if (nflag == true)
   {
+  if (endX_ == interX_) tMaxXn = std::numeric_limits<double>::infinity();
+  if (endY_ == interY_) tMaxYn = std::numeric_limits<double>::infinity();
+  if (endZ_ == interZ_) tMaxZn = std::numeric_limits<double>::infinity();
   if (tMaxXn < tMaxYn)
   {
     if (tMaxXn < tMaxZn)
@@ -550,11 +559,11 @@ bool RayCaster::biNextId(Eigen::Vector3i& idx, Eigen::Vector3i& idxR)
   }
   else
   {
-    if (tMaxYn < tMaxZn) 
+    if (tMaxYn < tMaxZn)
     {
       endY_ += stepYn;
       tMaxYn += tDeltaYn;
-    } else 
+    } else
     {
       endZ_ += stepZn;
       tMaxZn += tDeltaZn;
@@ -570,7 +579,7 @@ bool RayCaster::biNextId(Eigen::Vector3i& idx, Eigen::Vector3i& idxR)
 
 bool RayCaster::nextPos(Eigen::Vector3d& pos) {
   auto tmp = Eigen::Vector3d(x_, y_, z_);
-  pos = (tmp + half_) * resolution_;
+  pos = origin_ + (tmp + half_) * resolution_;
 
   if (x_ == endX_ && y_ == endY_ && z_ == endZ_) {
     return false;
@@ -580,6 +589,10 @@ bool RayCaster::nextPos(Eigen::Vector3d& pos) {
   // X axis, and similarly for Y and Z. Therefore, choosing the least tMax
   // chooses the closest cube boundary. Only the first case of the four
   // has been commented in detail.
+  if (x_ == endX_) tMaxX_ = std::numeric_limits<double>::infinity();
+  if (y_ == endY_) tMaxY_ = std::numeric_limits<double>::infinity();
+  if (z_ == endZ_) tMaxZ_ = std::numeric_limits<double>::infinity();
+
   if (tMaxX_ < tMaxY_) {
     if (tMaxX_ < tMaxZ_) {
       // Update which cube we are now in.

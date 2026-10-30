@@ -35,11 +35,11 @@ catkin_package(
  CATKIN_DEPENDS roscpp std_msgs quadrotor_msgs
 )
 
-include_directories( 
-    SYSTEM 
-    include 
+include_directories(
+    SYSTEM
+    include
     ${catkin_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/include ${PROJECT_ROOT_DIR}
-    ${EIGEN3_INCLUDE_DIR} 
+    ${EIGEN3_INCLUDE_DIR}
     ${PCL_INCLUDE_DIRS}
     ${OpenCV_INCLUDE_DIRS}
     ${EMBREE_INCLUDE_DIR}
@@ -48,27 +48,32 @@ include_directories(
 link_directories(${PCL_LIBRARY_DIRS})
 
 
-add_library( plan_env 
-    src/sdf_map.cpp 
+add_library( plan_env
+    src/sdf_map.cpp
     src/raycast.cpp
     src/map_ros.cpp
     )
 target_link_libraries( plan_env
-    ${catkin_LIBRARIES} 
+    ${catkin_LIBRARIES}
     ${PCL_LIBRARIES}
     ${EMBREE_LIBRARY}
     yaml-cpp
-    )  
+    )
 
-add_executable( mapping 
+add_executable( mapping
     src/mapping.cpp
-    src/sdf_map.cpp 
+    src/sdf_map.cpp
     src/raycast.cpp
     src/map_ros.cpp
     )
 target_link_libraries( mapping
-    ${catkin_LIBRARIES} 
+    ${catkin_LIBRARIES}
     ${PCL_LIBRARIES}
     ${EMBREE_LIBRARY}
     yaml-cpp
-    )  
+    )
+
+if(CATKIN_ENABLE_TESTING)
+  add_executable(raycast_regression test/raycast_test.cpp src/raycast.cpp)
+  add_test(NAME raycast_regression COMMAND $<TARGET_FILE:raycast_regression>)
+endif()

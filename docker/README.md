@@ -26,6 +26,35 @@ bash docker/setup.sh --check
 
 `setup.sh` detects the GPU compute capability for the ML image. Set `TORCH_CUDA_ARCH_LIST` only if you need to override it. Public download throttling is handled by rerunning the same command; verified files are reused.
 
+Google Drive project downloads use a cached downloader and file listing under
+`.docker-data/`. Each file reports its position in the listing. Network reads
+time out after 60 seconds without data and retry up to 3 times; completed files
+and partial transfers are reused on the next run. Each successfully listed
+folder is cached, so a late directory error does not restart the entire crawl;
+the full file listing is published only after successful discovery. Set
+`DOWNLOAD_TIMEOUT` (seconds) and `DOWNLOAD_RETRIES` to override these defaults.
+Files download from the Drive attachment endpoint with 4 workers by default
+(`DOWNLOAD_JOBS` overrides this), avoiding preview-page link discovery. Interrupted
+transfers use `.drive.part` files and validated HTTP range responses. Error pages
+are rejected before writing; files are published only after transfer completion.
+Transient TLS connection closures and Drive download-link failures are retried
+with certificate checks enabled. Persistent permission or quota errors still
+stop setup and preserve the downloaded files.
+The curl-based scene/checkpoint downloads also retry TLS failures and abort
+transfers that receive no data for 60 seconds. Failed scene transfers keep their
+temporary files and are never published as completed assets.
+Host HTTP/HTTPS proxy environment variables are passed to the download container.
+The project download includes `FlyCo.uproject`, `Config`, `Content`, `Plugins`,
+and `Source`; root build outputs, IDE files, saved logs/crash dumps, and derived
+data caches are omitted because setup builds the project locally.
+
+If the UE image fails to fetch Ubuntu packages with proxy errors such as
+`502 Bad Gateway`, and direct access to the Ubuntu repositories works, resume
+with `FLYCO_APT_PROXY=DIRECT bash docker/setup.sh`. This overrides the proxy only
+for APT in the UE build image; existing images and downloaded resources are reused.
+`FLYCO_APT_PROXY` can also specify an APT proxy URL. Leave it unset to retain the
+Docker client's proxy settings.
+
 ## Run a Scene
 
 From the FlyCo directory, run one scene at a time. If you began with only `docker/`, first `cd FlyCo`.
@@ -34,6 +63,12 @@ From the FlyCo directory, run one scene at a time. If you began with only `docke
 ./docker/run.sh bahai
 ```
 
+The scan completion threshold is `coverage_objective=99.5` in
+`planner_simulator/src/flyco_planner_manager/launch/demo/param.xml`. The planner
+marks the task finished when Flight Coverage is strictly greater than this
+percentage. The launcher mounts this configuration read-only, so changes take
+effect when starting a new scene container without rebuilding the image.
+
 Follow the [Quick Start](../README.md) sequence: LB, Y, visual/text prompt, X, RB. The launcher passes through `/dev/input/js0` when present. Detach with `Ctrl-P`, `Ctrl-Q`; reattach with `docker attach flyco-bahai`. To stop and switch scenes:
 
 ```bash
@@ -41,7 +76,34 @@ docker stop flyco-bahai
 ./docker/run.sh church
 ```
 
-Without a joystick, publish `sensor_msgs/Joy` to `/joy` inside the container; button indices 4/3/2/5 correspond to LB/Y/X/RB. Logs are under `.docker-data/logs/`.
+Without a joystick, open a second host terminal while the scene is running:
+
+```bash
+bash docker/keyboard.sh bahai
+```
+
+This works with the running container without rebuilding the image. Keep the
+keyboard terminal focused when pressing these keys:
+
+1. Press `1` (LB) to initialize the modules; wait for them to be ready.
+2. Press `2` (Y) for the initial flight; wait for the drone to settle.
+3. In **FlyCo-UI**, drag with the middle mouse button to box the target, or
+   left-click points on the target, then click **send points**. Right-click
+   negative/background points if needed; **clear points** clears the selection.
+   Optionally describe the target in the text field and click **send text**.
+4. Return to the keyboard terminal and press `3` (X) to enable planning services.
+   Wait for the target segmentation/point cloud and planning data to appear.
+5. Press `4` (RB) to trigger autonomous scanning of the selected structure.
+
+FlyCo plans a scanning route around the prompted structure. The UI selects the
+target; the keyboard triggers the mission stages. `h` shows help and `q` exits
+the keyboard program without stopping an active flight. To end the simulation,
+run `docker stop flyco-bahai` from another terminal.
+
+For a connection-only check, run `bash docker/keyboard.sh bahai --check`; this
+sends no control messages. The controller publishes `sensor_msgs/Joy` on `/joy`
+with button indices 4/3/2/5 corresponding to LB/Y/X/RB, followed by release
+messages. Logs are under `.docker-data/logs/`.
 
 ## Edits and Rebuilds
 
@@ -53,3 +115,8 @@ docker build --network=host -f docker/Dockerfile.ml -t flyco:full .
 ```
 
 Re-run `./docker/build-ue.sh` after changing UE C++ source.
+
+The Docker build context excludes `ros2_migration/`, Git metadata, local build
+directories, logs, cached simulation assets, and downloaded model weights. The
+standalone `docker/` installer includes the same map-origin raycasting fix and
+regression test as the ROS1 source tree.

@@ -93,7 +93,7 @@ private:
   int step_num_;
 
   double resolution_;
-  Eigen::Vector3d offset_;
+  Eigen::Vector3d origin_;
   Eigen::Vector3d half_;
 
 public:

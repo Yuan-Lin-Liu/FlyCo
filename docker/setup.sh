@@ -152,17 +152,24 @@ if [[ ! -d "$engine/.git" ]]; then
     die "UE clone failed. Link Epic and GitHub, accept the invitation, and configure GitHub SSH access."
 fi
 
-gdown() {
+download_project() {
+  echo "Preparing cached Google Drive downloader..."
   docker run --rm --network host --user "$(id -u):$(id -g)" -e HOME=/tmp \
-    -e PYTHONPATH=/tmp/gdown -v "$data:/data" python:3.12-slim \
-    sh -c 'python -m pip install -q --disable-pip-version-check --target /tmp/gdown "gdown>=6,<7" && python -m gdown "$@"' _ "$@"
+    -e PYTHONPATH=/data/tools/gdown -e DOWNLOAD_TIMEOUT -e DOWNLOAD_RETRIES -e DOWNLOAD_JOBS \
+    -e HTTP_PROXY -e HTTPS_PROXY -e ALL_PROXY -e NO_PROXY \
+    -e http_proxy -e https_proxy -e all_proxy -e no_proxy \
+    -v "$data:/data" -v "$here:/setup:ro" python:3.12-slim \
+    sh -ec 'python -c "import gdown; assert gdown.__version__ == \"6.4.2\"" 2>/dev/null ||
+      python -m pip install --disable-pip-version-check --timeout 30 --retries 3 \
+        --upgrade --target /data/tools/gdown "gdown==6.4.2"
+      exec python -u /setup/download-project.py /data'
 }
 
 if [[ ! -f "$project/FlyCo.uproject" || ! -f "$project/Plugins/AirSim/AirSim.uplugin" ]]; then
   stage="$data/project-download"
   mkdir -p "$stage"
   echo "Downloading the FlyCo UE project from Google Drive..."
-  gdown --folder --continue 'https://drive.google.com/drive/folders/1BXd7_2unaK4iHz50_pSFBnJU25b3mYVl' -O /data/project-download
+  download_project
   uproject="$(find "$stage" -name FlyCo.uproject -type f -print -quit)"
   [[ -n "$uproject" ]] || die "Google Drive download did not contain FlyCo.uproject under $stage"
   mkdir -p "$project"
@@ -179,20 +186,24 @@ for manifest in scenes bahai misc; do
 done
 
 if ! has_hash "$sam" "$sam_hash"; then
-  curl -fL --retry 5 --connect-timeout 30 \
+  echo "Downloading SAM2 checkpoint..."
+  curl -fL --retry 5 --retry-all-errors --connect-timeout 30 --speed-limit 1 --speed-time 60 \
     'https://dl.fbaipublicfiles.com/segment_anything_2/072824/sam2_hiera_small.pt' -o "$sam.part"
   has_hash "$sam.part" "$sam_hash" || die "SAM2 download failed checksum verification"
   mv "$sam.part" "$sam"
 fi
 if ! has_hash "$mesh" "$mesh_hash"; then
   [[ -n "$mesh_url" ]] || die "Set FLYCO_CHECKPOINT_URL to the checkpoint download URL, or place checkpoint.pt under $models"
-  curl -fL --retry 5 --connect-timeout 30 --continue-at - "$mesh_url" -o "$data/checkpoint.pt.part"
+  echo "Downloading mesh checkpoint..."
+  curl -fL --retry 5 --retry-all-errors --connect-timeout 30 --speed-limit 1 --speed-time 60 \
+    --continue-at - "$mesh_url" -o "$data/checkpoint.pt.part"
   has_hash "$data/checkpoint.pt.part" "$mesh_hash" || die "Checkpoint download failed checksum verification"
   mv "$data/checkpoint.pt.part" "$mesh"
 fi
 rm -f "$models/checkpoint.pth"
 if ! has_hash "$nksr" "$nksr_hash"; then
-  curl -fL --retry 5 --connect-timeout 30 \
+  echo "Downloading NKSR checkpoint..."
+  curl -fL --retry 5 --retry-all-errors --connect-timeout 30 --speed-limit 1 --speed-time 60 \
     'https://huggingface.co/heiwang1997/nksr-checkpoints/resolve/main/checkpoints/snet-n3k-wonormal.pth' -o "$nksr.part"
   has_hash "$nksr.part" "$nksr_hash" || die "NKSR download failed checksum verification"
   mv "$nksr.part" "$nksr"
@@ -215,6 +226,9 @@ for spec in 'docker/Dockerfile flyco:noetic' 'docker/Dockerfile.ml flyco:full' '
   if ! docker image inspect "$image" >/dev/null 2>&1; then
     build_args=(--network=host -f "$root/$dockerfile" -t "$image")
     [[ "$image" == flyco:full ]] && build_args+=(--build-arg "TORCH_CUDA_ARCH_LIST=$TORCH_CUDA_ARCH_LIST")
+    if [[ "$image" == flyco:ue-build && -n "${FLYCO_APT_PROXY:-}" ]]; then
+      build_args+=(--build-arg "APT_PROXY=$FLYCO_APT_PROXY")
+    fi
     docker build "${build_args[@]}" "$root"
   fi
 done

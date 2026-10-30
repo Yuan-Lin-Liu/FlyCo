@@ -72,7 +72,7 @@ Please kindly star ⭐️ this project if it helps you. We take great efforts to
 First, clone this repository:
 
 ```bash
-git clone git@github.com:FC-Family/FlyCo.git
+git clone git@github.com:Yuan-Lin-Liu/FlyCo.git
 cd FlyCo
 ```
 
@@ -176,6 +176,12 @@ docker stop flyco-bahai # run from another terminal to stop the stack
 ```
 
 See the [Docker guide](./docker/README.md) for more details.
+
+To use the keyboard instead of a joystick, open another terminal while the scene
+is running and execute `bash docker/keyboard.sh bahai`. Keys `1`, `2`, `3`, and `4`
+trigger initialization, initial flight, planning services, and autonomous scanning.
+Select the target in FlyCo-UI between keys `2` and `3`. Press `h` for help; `q`
+closes only the keyboard program and does not stop an active flight.
 
 ## 🤗 FC-Family Works
 

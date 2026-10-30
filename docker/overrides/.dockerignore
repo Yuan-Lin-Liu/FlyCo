@@ -2,6 +2,7 @@
 **/devel
 **/install
 **/logs
+**/log
 **/run_log
 **/__pycache__
 **/*.bag
@@ -9,5 +10,8 @@
 **/ckpt/*.pt
 **/ckpt/*.pth
 **/resources/checkpoints/*.pth
+**/resources/checkpoints/*.pt
 misc
 .docker-data
+.git
+ros2_migration

@@ -19,8 +19,9 @@ download_one() {
   fi
   mkdir -p "$(dirname "$target")"
   temporary="$target.part"
-  curl -fsSL --retry 3 --connect-timeout 20 --max-time 1200 \
-    -o "$temporary" "https://drive.usercontent.google.com/download?id=$id&export=download"
+  curl -fsSL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 1200 \
+    --speed-limit 1 --speed-time 60 \
+    -o "$temporary" "https://drive.usercontent.google.com/download?id=$id&export=download" || return
   if [[ "$target" == *.uasset || "$target" == *.umap ]]; then
     magic="$(od -An -tx1 -N4 "$temporary" | tr -d ' \n')"
     [[ "$magic" == c1832a9e ]] || { echo "Invalid UE asset: $relative" >&2; return 1; }

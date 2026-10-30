@@ -29,7 +29,7 @@
   <arg name="mapping_vis_z_min"  default="-3.0"/>
   <arg name="local_length"       default="10.0"/>
   <arg name="global_overlap"     default="10.0"/>
-  <arg name="coverage_objective" default="99.0"/>
+  <arg name="coverage_objective" default="99.5"/>
   <arg name="max_cvx_range"      default="10.0"/>
   <arg name="global_solving"     default="150.0"/>
   <arg name="vis_inf"            default="0.6"/>

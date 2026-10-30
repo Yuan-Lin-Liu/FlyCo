@@ -14,3 +14,4 @@ __pycache__/
 perception_predictor/src/sam_tracking/ckpt/*.pt
 perception_predictor/src/sam_tracking/ckpt/*.pth
 perception_predictor/src/mesh_predict/resources/checkpoints/*.pth
+perception_predictor/src/mesh_predict/resources/checkpoints/*.pt
